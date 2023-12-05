@@ -10,4 +10,4 @@ const stringLarge = (string) => {
     }
 }
 
-stringLarge ("Laloooooooo")
+stringLarge ("Hola")
