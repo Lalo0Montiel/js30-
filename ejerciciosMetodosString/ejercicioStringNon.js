@@ -6,11 +6,12 @@ una posición non
 
 const palabrasNon = (string) =>{
     let palabraImpar = "";
-    let large = string.length;
+    let corte = string.split(" ")
+    let large = corte.length;
     for (let i= 0; i<large; i++){
-        if (large % 2 === 0){
-            let char = string [i];
-            palabraImpar += char;
+        if (i % 2 !== 0){
+            let char = corte[i];
+            palabraImpar += char + " ";
         }
         }
         console.log(palabraImpar)
