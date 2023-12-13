@@ -37,11 +37,20 @@
   */
 
 
-  const citieFor = (array) => {
-    array.forEach((country)=>{
-        console.log(`La ${country.ciudad} se encuentra en ${country.pais}`)
+ /*3*/ const personFor = (array) => {
+    array.forEach((koder)=>{
+        console.log(`${koder.nombre} ${koder.apellidos}`)
     })
   }
 
-  citieFor(cities)
+  personFor(persons) 
   
+/*4*/ const newEmail = (array) => {
+    let newArray = array.map((email)=>{
+    return email.correo.replace("@example.com", "@kodemia.mx")
+       }) 
+    console.log(newArray)
+}
+  
+newEmail(persons) 
+
