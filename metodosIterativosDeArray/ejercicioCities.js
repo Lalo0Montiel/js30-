@@ -30,7 +30,7 @@ let cities = [
   - si la ciudad tiene más de una palabra, mostramos las iniciales de cada palabra
       ciudad del cabo =>  C.D.C. */
 
-  const citieFor = (array) => {
+  /*1 */const citieFor = (array) => {
     array.forEach((country)=>{
         console.log(`La ${country.ciudad} se encuentra en ${country.pais}`)
     })
